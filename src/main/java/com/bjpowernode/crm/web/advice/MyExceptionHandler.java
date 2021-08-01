@@ -14,11 +14,10 @@ public class MyExceptionHandler {
     //捕获登录时异常
     @ExceptionHandler(LoginException.class)
     @ResponseBody
-    public Map loginException(final Exception e){
-
-        return  new HashMap(){{
-           put("success",false);
-           put("msg",e.getMessage());
+    public Map loginException(final Exception e) {
+        return new HashMap() {{
+            put("success", false);
+            put("msg", e.getMessage());
         }};
     }
 

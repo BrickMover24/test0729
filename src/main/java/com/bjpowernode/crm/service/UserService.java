@@ -6,4 +6,6 @@ public interface UserService {
 
 
     User getUser(String username, String password, String ip);
+
+    User getUserForAuto(String username, String password, String ip);
 }
