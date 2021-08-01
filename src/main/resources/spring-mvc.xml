@@ -24,7 +24,7 @@
     <!--<mvc:view-controller path="/" view-name="/index.html" />-->
 
     <!--配置拦截器-->
-    <!--<mvc:interceptors>
+    <mvc:interceptors>
             <mvc:interceptor>
                 <mvc:mapping path="/**"/>
                 <mvc:exclude-mapping path="/static/**" />
@@ -33,6 +33,5 @@
                 <mvc:exclude-mapping path="/user/login.do" />
                 <bean class="com.bjpowernode.crm.web.interceptor.LoginInterceptor" />
             </mvc:interceptor>
-        </mvc:interceptors>-->
-
+        </mvc:interceptors>
 </beans>

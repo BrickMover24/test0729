@@ -30,7 +30,7 @@ public class CommonsController {
             User user = userService.getUserForAuto(username, password, ip);
             if (user!=null){
                 request.getSession().setAttribute("loginUser", user);
-                return "redirect:/workbench/index.jsp";
+                return "redirect:/workbench/index.html";
             }
         }
         return "redirect:/login.jsp";

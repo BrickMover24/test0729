@@ -10,25 +10,24 @@ import java.util.Map;
 
 @ControllerAdvice
 public class MyExceptionHandler {
-
-    //捕获登录时异常
+    // 捕获登录相关的异常
     @ExceptionHandler(LoginException.class)
     @ResponseBody
-    public Map loginException(final Exception e) {
-        return new HashMap() {{
+    public Map LoginException(Exception e) {
+        return new HashMap(){{
             put("success", false);
             put("msg", e.getMessage());
         }};
     }
 
-    //其他异常
+    // 其它异常
     @ExceptionHandler(Exception.class)
     @ResponseBody
-    public Map Exception(final Exception e){
-       e.printStackTrace();
-        return  new HashMap(){{
-            put("success",false);
-            put("msg",e.getMessage());
+    public Map Exception(Exception e) {
+        e.printStackTrace();
+        return new HashMap(){{
+            put("success", false);
+            put("msg", e.getMessage());
         }};
     }
 }
