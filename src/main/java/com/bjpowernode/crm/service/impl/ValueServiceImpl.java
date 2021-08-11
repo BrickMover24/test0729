@@ -28,10 +28,8 @@ public class ValueServiceImpl  implements ValueService {
     }
 
     public void update(Value value) {
-
         valueMapper.update(value);
     }
-
     public void delete(Serializable... id) {
            valueMapper.delete(id);
     }

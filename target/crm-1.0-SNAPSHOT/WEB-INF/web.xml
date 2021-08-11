@@ -54,11 +54,21 @@
 		<url-pattern>*.do</url-pattern>
 	</filter-mapping>
 
-	<!--<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
 	</welcome-file-list>
 
-	<session-config>
+<!--	<session-config>
 		<session-timeout>30</session-timeout>
 	</session-config>-->
+
+
+<!--	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>/*.jsp</url-pattern>
+			<el-ignored>false</el-ignored>
+		</jsp-property-group>
+	</jsp-config>-->
+
+
 </web-app>

@@ -27,8 +27,8 @@
 
     <delete id="delete">
         delete from tbl_dictionary_type where code in
-        <foreach collection="array" open="(" separator="," close=")" item="c">
-            #{c}
+        <foreach collection="array" open="(" separator="," close=")" item="code">
+            #{code}
         </foreach>
     </delete>
 </mapper>

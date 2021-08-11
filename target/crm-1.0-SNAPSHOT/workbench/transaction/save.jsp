@@ -1,17 +1,36 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<%@ include file="/inc/commons-head.jsp"%>
+	<script>
 
-<link href="../../jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-<link href="../../jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" />
+		jQuery(function ($) {
+			$("#create-accountName").typeahead({
+				source: function (keyword, process) {
+					$.get("/transaction/getCustomerName.do?name=" + keyword, function (data) {
+						process(data);
+					}, "json");
+				},
+				delay: 500
+			});
 
-<script type="text/javascript" src="../../jquery/jquery-1.11.1-min.js"></script>
-<script type="text/javascript" src="../../jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript" src="../../jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js"></script>
+			var stage2PossObj=${stage2PossObj};
 
+			$("#create-transactionStage").change(function () {
+
+				$("#create-possibility").val(stage2PossObj[this.value]);
+			})
+
+		})
+
+		<%--var staage2Poss={};
+        <c:forEach items="${stage2Poss}" var="s2p">
+          staage2Poss["${s2p.key}"]="${s2p.value}";
+		</c:forEach>--%>
+
+	</script>
 </head>
 <body>
 
@@ -157,17 +176,8 @@
 			</div>
 			<label for="create-transactionStage" class="col-sm-2 control-label">阶段<span style="font-size: 15px; color: red;">*</span></label>
 			<div class="col-sm-10" style="width: 300px;">
-			  <select class="form-control" id="create-transactionStage">
+			  <select name="stage" options="stage" class="form-control" id="create-transactionStage">
 			  	<option></option>
-			  	<option>资质审查</option>
-			  	<option>需求分析</option>
-			  	<option>价值建议</option>
-			  	<option>确定决策者</option>
-			  	<option>提案/报价</option>
-			  	<option>谈判/复审</option>
-			  	<option>成交</option>
-			  	<option>丢失的线索</option>
-			  	<option>因竞争丢失关闭</option>
 			  </select>
 			</div>
 		</div>

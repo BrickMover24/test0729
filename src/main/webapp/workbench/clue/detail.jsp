@@ -1,19 +1,14 @@
-<%@page contentType="text/html; charset=UTF-8"%>
+<%@page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-
-<link href="../../jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" src="../../jquery/jquery-1.11.1-min.js"></script>
-<script type="text/javascript" src="../../jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
-
+	<%@ include file="/inc/commons-head.jsp"%>
 <script type="text/javascript">
 
 	//默认情况下取消和保存按钮是隐藏的
 	var cancelAndSaveBtnDefault = true;
-	
-	$(function(){
+
+	jQuery(function($){
 		$("#remark").focus(function(){
 			if(cancelAndSaveBtnDefault){
 				//设置remarkDiv的高度为130px
@@ -47,7 +42,75 @@
 		$(".myHref").mouseout(function(){
 			$(this).children("span").css("color","#E6E6E6");
 		});
+
+
+
+		// 加载已关联的市场活动
+		function loadRelActivities() {
+			$.ajax({
+				url: "/act/getByClueId.json?clueId=${param.id}",
+				success(data) {
+					var arr = [];
+					$(data).each(function () {
+						arr.push(`<tr>
+                                <td>`+this.name+`</td>
+                                <td>`+this.startDate+`</td>
+                                <td>`+this.endDate+`</td>
+                                <td>`+this.owner+`</td>
+                            </tr>`)
+					})
+					$("#dataBody").html( arr.join("") );
+				}
+			})
+		}
+		loadRelActivities();
+
+		// 加载所有市场活动到关联窗口
+		$.ajax({
+			url: "/act/activities.json",
+			success(data) {
+				var arr = [];
+				$(data).each(function () {
+					arr.push(`<tr>
+                                <td><input name="id" value="`+this.id+`" type="checkbox"/></td>
+                                <td>`+this.name+`</td>
+                                <td>`+this.startDate+`</td>
+                                <td>`+this.endDate+`</td>
+                                <td>`+this.owner+`</td>
+                            </tr>`)
+				})
+				$("#dataBody2").html( arr.join("") );
+			}
+		})
+
+		$("#relBtn").click(function () {
+			// 获取选中的市场活动id
+			var actIds = [];
+			$(":checkbox[name=id]:checked").each(function () {
+				actIds.push(this.value);
+			});
+
+			$.ajax({
+				url: "/clue/rel.do",
+				data: {
+					clueId: "${param.id}",
+					actIds: actIds.join(",") // 1,2,3
+				},
+				success(data) {
+					if (data.success) {
+						$("#bundModal").modal('hide');
+						loadRelActivities(); // 重新加载已关联的市场活动
+					}
+					if (data.msg) {
+						alert(data.msg);
+					}
+				}
+			})
+		})
 	});
+
+
+
 	
 </script>
 
@@ -55,25 +118,6 @@
 <body>
 
 	<!-- 解除关联的模态窗口 -->
-	<div class="modal fade" id="unbundModal" role="dialog">
-		<div class="modal-dialog" role="document" style="width: 30%;">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">
-						<span aria-hidden="true">×</span>
-					</button>
-					<h4 class="modal-title">解除关联</h4>
-				</div>
-				<div class="modal-body">
-					<p>您确定要解除该关联关系吗？</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-					<button type="button" class="btn btn-danger" data-dismiss="modal">确定</button>
-				</div>
-			</div>
-		</div>
-	</div>
 	
 	<!-- 关联市场活动的模态窗口 -->
 	<div class="modal fade" id="bundModal" role="dialog">
@@ -89,11 +133,13 @@
 					<div class="btn-group" style="position: relative; top: 18%; left: 8px;">
 						<form class="form-inline" role="form">
 						  <div class="form-group has-feedback">
-						    <input type="text" class="form-control" style="width: 300px;" placeholder="请输入市场活动名称，支持模糊查询">
+						    <input type="text" class="form-control" style="width: 300px;"
+								   placeholder="请输入市场活动名称，支持模糊查询">
 						    <span class="glyphicon glyphicon-search form-control-feedback"></span>
 						  </div>
 						</form>
 					</div>
+					<div style="height:300px; overflow: auto">
 					<table id="activityTable" class="table table-hover" style="width: 900px; position: relative;top: 10px;">
 						<thead>
 							<tr style="color: #B3B3B3;">
@@ -105,27 +151,13 @@
 								<td></td>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
-								<td><input type="checkbox"/></td>
-								<td>发传单</td>
-								<td>2020-10-10</td>
-								<td>2020-10-20</td>
-								<td>zhangsan</td>
-							</tr>
-							<tr>
-								<td><input type="checkbox"/></td>
-								<td>发传单</td>
-								<td>2020-10-10</td>
-								<td>2020-10-20</td>
-								<td>zhangsan</td>
-							</tr>
-						</tbody>
+						<tbody id="dataBody2"></tbody>
 					</table>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-					<button type="button" class="btn btn-primary" data-dismiss="modal">关联</button>
+					<button id="relBtn" type="button" class="btn btn-primary" data-dismiss="modal">关联</button>
 				</div>
 			</div>
 		</div>
@@ -299,7 +331,7 @@
 		</div>
 		<div style="position: relative; height: 50px; width: 500px;  top: -72px; left: 700px;">
 			<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> 发送邮件</button>
-			<button type="button" class="btn btn-default" onclick="window.location.href='convert.html';"><span class="glyphicon glyphicon-retweet"></span> 转换</button>
+			<button type="button" class="btn btn-default" onclick="location='convert.jsp?id=${param.id}'";><span class="glyphicon glyphicon-retweet"></span> 转换</button>
 			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#editClueModal"><span class="glyphicon glyphicon-edit"></span> 编辑</button>
 			<button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-minus"></span> 删除</button>
 		</div>
@@ -399,7 +431,7 @@
 		
 		<!-- 备注1 -->
 		<div class="remarkDiv" style="height: 60px;">
-			<img title="zhangsan" src="../../image/user-thumbnail.png" style="width: 30px; height:30px;">
+			<img title="zhangsan" src="/static/image/user-thumbnail.png" style="width: 30px; height:30px;">
 			<div style="position: relative; top: -40px; left: 40px;" >
 				<h5>哎呦！</h5>
 				<font color="gray">线索</font> <font color="gray">-</font> <b>李四先生-动力节点</b> <small style="color: gray;"> 2017-01-22 10:10:10 由zhangsan</small>
@@ -413,7 +445,7 @@
 		
 		<!-- 备注2 -->
 		<div class="remarkDiv" style="height: 60px;">
-			<img title="zhangsan" src="../../image/user-thumbnail.png" style="width: 30px; height:30px;">
+			<img title="zhangsan" src="/static/image/user-thumbnail.png" style="width: 30px; height:30px;">
 			<div style="position: relative; top: -40px; left: 40px;" >
 				<h5>呵呵！</h5>
 				<font color="gray">线索</font> <font color="gray">-</font> <b>李四先生-动力节点</b> <small style="color: gray;"> 2017-01-22 10:20:10 由zhangsan</small>
@@ -450,35 +482,17 @@
 							<td>开始日期</td>
 							<td>结束日期</td>
 							<td>所有者</td>
-							<td></td>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td>发传单</td>
-							<td>2020-10-10</td>
-							<td>2020-10-20</td>
-							<td>zhangsan</td>
-							<td><a href="javascript:void(0);" data-toggle="modal" data-target="#unbundModal" style="text-decoration: none;"><span class="glyphicon glyphicon-remove"></span>解除关联</a></td>
-						</tr>
-						<tr>
-							<td>发传单</td>
-							<td>2020-10-10</td>
-							<td>2020-10-20</td>
-							<td>zhangsan</td>
-							<td><a href="javascript:void(0);" data-toggle="modal" data-target="#unbundModal" style="text-decoration: none;"><span class="glyphicon glyphicon-remove"></span>解除关联</a></td>
-						</tr>
-					</tbody>
+					<tbody id="dataBody"></tbody>
 				</table>
 			</div>
-			
 			<div>
 				<a href="javascript:void(0);" data-toggle="modal" data-target="#bundModal" style="text-decoration: none;"><span class="glyphicon glyphicon-plus"></span>关联市场活动</a>
 			</div>
 		</div>
 	</div>
-	
-	
+
 	<div style="height: 200px;"></div>
 </body>
 </html>

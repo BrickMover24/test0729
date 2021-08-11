@@ -15,7 +15,6 @@ public class TypeServiceImpl implements TypeService {
    private TypeMapper typeMapper;
 
     public List getAll() {
-
         return typeMapper.getAll();
     }
 

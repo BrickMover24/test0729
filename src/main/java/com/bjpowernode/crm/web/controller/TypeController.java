@@ -8,9 +8,6 @@ import com.bjpowernode.crm.web.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Map;
 
@@ -22,24 +19,23 @@ public class TypeController {
     private TypeService typeService;
 
     @GetMapping("list.json")
-
-      public List list(){
+    public List list(){
         return typeService.getAll();
     }
 
-     @GetMapping("get.json")
+    @GetMapping("get.json")
     public Type get(String code){
         return typeService.get(code);
      }
 
      @PostMapping("save.do")
-    public Map save(Type type){
+     public Map save(Type type){
         typeService.save(type);
         return Result.SUCCESS;
      }
 
      @PutMapping("update.do")
-    public Map update(Type type){
+     public Map update(Type type){
          typeService.update(type);
          return Result.SUCCESS;
      }

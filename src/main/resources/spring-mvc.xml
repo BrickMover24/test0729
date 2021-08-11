@@ -21,7 +21,7 @@
     <mvc:default-servlet-handler />
 
     <!--配置站点入口-->
-    <!--<mvc:view-controller path="/" view-name="/index.html" />-->
+    <mvc:view-controller path="/" view-name="/index.jsp" />
 
     <!--配置拦截器-->
     <mvc:interceptors>
@@ -29,9 +29,17 @@
                 <mvc:mapping path="/**"/>
                 <mvc:exclude-mapping path="/static/**" />
                 <mvc:exclude-mapping path="/" />
-                <mvc:exclude-mapping path="/login.html" />
+                <mvc:exclude-mapping path="/login.jsp" />
                 <mvc:exclude-mapping path="/user/login.do" />
                 <bean class="com.bjpowernode.crm.web.interceptor.LoginInterceptor" />
             </mvc:interceptor>
         </mvc:interceptors>
+
+    <!--配置文件解析器 id:必须是 multipartResolver -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 一次最大的上传总大小最大为 5M -->
+        <!--<property name="maxUploadSize" value="#{1024*1024*5}" />-->
+        <!-- 一次性可以上传多个文件，每个文件的最大为1M -->
+        <!--<property name="maxUploadSizePerFile" value="#{1024*1024*1}" />-->
+    </bean>
 </beans>

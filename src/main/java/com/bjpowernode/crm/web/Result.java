@@ -7,7 +7,7 @@ public class Result {
     public static final Map SUCCESS= new HashMap(){
         {
             put("success",true);
-            put("msg","操作成功!");
+            put("msges","操作成功!!");
         }
     };
 }
