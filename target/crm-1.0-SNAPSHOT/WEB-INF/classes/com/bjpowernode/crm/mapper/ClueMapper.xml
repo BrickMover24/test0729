@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bjpowernode.crm.mapper.ClueMapper">
+
+    <!--SQL片段：共用的SQL语句-->
+    <sql id="searchSQL">
+        <if test="data!=null">
+        <where>
+            <if test="data.fullName!=null and data.fullName!=''">
+                and fullName like '%' #{data.fullName} '%'
+            </if>
+            <if test="data.owner!=null and data.owner!=''">
+                and owner like '%' #{data.owner} '%'
+            </if>
+            <if test="data.company!=null and data.company!=''">
+                and company=#{data.company}
+            </if>
+            <if test="data.phone!=null and data.phone!=''">
+                and phone like '%' #{data.phone} '%'
+            </if>
+            <if test="data.mphone!=null and data.mphone!=''">
+                and mphone like '%' #{data.mphone} '%'
+            </if>
+            <if test="data.state!=null and data.state!=''">
+                and state=#{data.state}
+            </if>
+            <if test="data.source!=null and data.source!=''">
+                and source=#{data.source}
+            </if>
+        </where>
+        </if>
+    </sql>
+
+    <select id="getCount" resultType="int">
+        select count(*) from tbl_clue
+        <include refid="searchSQL" />
+    </select>
+
+    <select id="getData" resultType="Clue">
+        select * from tbl_clue
+        <include refid="searchSQL" />
+        limit #{start},#{length}
+    </select>
+
+    <select id="get" resultType="Clue">
+        select * from tbl_clue where id=#{id}
+    </select>
+
+</mapper>

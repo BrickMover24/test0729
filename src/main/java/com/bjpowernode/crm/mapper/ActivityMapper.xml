@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bjpowernode.crm.mapper.ActivityMapper">
+
+    <!--SQL片段：共用的SQL语句-->
+    <sql id="searchSQL">
+        <where>
+            <if test="data.name!=null and data.name!=''">
+                and `name` like '%' #{data.name} '%'
+            </if>
+            <if test="data.owner!=null and data.owner!=''">
+                and owner like '%' #{data.owner} '%'
+            </if>
+            <if test="data.startDate!=null and data.startDate!=''">
+                and startDate=#{data.startDate}
+            </if>
+            <if test="data.endDate!=null and data.endDate!=''">
+                and endDate=#{data.endDate}
+            </if>
+        </where>
+    </sql>
+
+    <update id="update">
+        update tbl_marketing_activities set
+            owner=#{owner},
+            name=#{name},
+            startDate=#{startDate},
+            endDate=#{endDate},
+            cost=#{cost},
+            description=#{description},
+            editBy=#{editBy},
+            editTime=#{editTime}
+        where id=#{id}
+    </update>
+
+    <select id="getCount" resultType="int">
+        select count(*) from tbl_marketing_activities
+        <include refid="searchSQL" />
+    </select>
+
+    <select id="getData" resultType="Activity">
+        select * from tbl_marketing_activities
+        <include refid="searchSQL" />
+        limit #{start},#{length}
+    </select>
+
+
+    <select id="getAll" resultType="Activity">
+        select * from tbl_marketing_activities
+    </select>
+
+    <select id="get" resultType="Activity">
+        select * from tbl_marketing_activities where id=#{id}
+    </select>
+
+
+    <insert id="save">
+        insert into tbl_marketing_activities values(
+            #{id},
+            #{owner},
+            #{name},
+            #{startDate},
+            #{endDate},
+            #{cost},
+            #{description},
+            #{createBy},
+            #{createTime},
+            #{editBy},
+            #{editTime}
+        )
+
+    </insert>
+
+    <insert id="saveList" >
+        insert into tbl_marketing_activities values
+        <foreach collection="list" item="act" separator=",">
+            (
+            #{act.id},
+            #{act.owner},
+            #{act.name},
+            #{act.startDate},
+            #{act.endDate},
+            #{act.cost},
+            #{act.description},
+            #{act.createBy},
+            #{act.createTime},
+            #{act.editBy},
+            #{act.editTime}
+            )
+        </foreach>
+    </insert>
+
+
+<!--线索表关联市场活动查询-->
+    <select id="getByClueId" resultType="Activity">
+        select a.* from tbl_marketing_activities a
+        left join tbl_clue_activity_relation b
+        on  a.id=b.activityId
+        where b.clueId=#{clueId}
+    </select>
+    <!--   <select id="getAll" resultType="Activity">
+            select * from tbl_marketing_activities
+        </select>-->
+
+</mapper>
