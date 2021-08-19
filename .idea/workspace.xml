@@ -15,7 +15,87 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe508a3e-2c6f-456a-8a8c-0196dde6b819" name="Default Changelist" comment="" />
+    <list default="true" id="fe508a3e-2c6f-456a-8a8c-0196dde6b819" name="Default Changelist" comment="更新了">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/exception/LoginException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/ActivityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/ActivityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/ClueActivityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/ClueActivityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/ClueMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/ClueMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/CustomerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/CustomerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/DeptMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/DeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TransactionHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TransactionHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TransactionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TransactionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/ValueMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/ValueMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Activity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Clue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/ClueActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Contacts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Remark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/SearchParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/TransactionHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/pojo/Value.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/ActivityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/ClueService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/DeptService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/TreansactionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/TypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/ValueService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/ActivityServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/ClueServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/DeptServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/TreansactionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/TypeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/ValueServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/utlis/DateTimeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/utlis/HandleFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/utlis/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/utlis/POJOUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/utlis/UUIDUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/Result$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/ActivityController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/ActivityRemarkController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/ClueController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/CommonsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/DeptController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/TransactionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/TypeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/ValueController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/interceptor/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/listener/LoadCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stage2poss.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +183,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.371" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.371" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/crm_war_exploded/" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
@@ -233,7 +313,8 @@
       <workItem from="1629285526279" duration="603000" />
       <workItem from="1629335916636" duration="997000" />
       <workItem from="1629339091598" duration="813000" />
-      <workItem from="1629364686516" duration="30000" />
+      <workItem from="1629364686516" duration="444000" />
+      <workItem from="1629365300946" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="123456~">
       <created>1627607409205</created>
@@ -263,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627800486402</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="更新了">
+      <created>1629364861716</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629364861716</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +374,8 @@
       <path value="$PROJECT_DIR$/../../../Project/code" />
     </ignored-roots>
     <MESSAGE value="123456~" />
-    <option name="LAST_COMMIT_MESSAGE" value="123456~" />
+    <MESSAGE value="更新了" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了" />
   </component>
   <component name="WindowStateProjectService">
     <state x="663" y="299" key="#Custom_Plugin_Repositories" timestamp="1628908686242">
@@ -314,10 +403,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="292" y="251" key="#Template_Data_Languages/0.0.1536.834@0.0.1536.834" timestamp="1628065865739" />
-    <state x="234" y="11" width="1146" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629286093012">
+    <state x="234" y="11" width="1146" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629365049894">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="234" y="11" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1629286093012" />
+    <state x="234" y="11" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1629365049894" />
     <state x="344" y="89" width="1146" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628767272851" />
     <state x="965" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1628764213556">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -364,65 +453,65 @@
     </state>
     <state x="836" y="292" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1628300396210" />
     <state x="1045" y="364" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628765394446" />
-    <state width="1077" height="148" key="GridCell.Tab.0.bottom" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.0.bottom" timestamp="1629365136746">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629365136746" />
     <state width="972" height="432" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.0.center" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.0.center" timestamp="1629365136746">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1629365136746" />
     <state width="972" height="432" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.0.left" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.0.left" timestamp="1629365136746">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1629365136746" />
     <state width="972" height="432" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.0.right" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.0.right" timestamp="1629365136746">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1629365136746" />
     <state width="972" height="432" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.1.bottom" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.1.bottom" timestamp="1629365136747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629365136747" />
     <state width="972" height="432" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.1.center" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.1.center" timestamp="1629365136747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1629365136747" />
     <state width="972" height="432" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.1.left" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.1.left" timestamp="1629365136747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1629365136747" />
     <state width="972" height="432" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.1.right" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.1.right" timestamp="1629365136747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1629365136747" />
     <state width="972" height="432" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.2.bottom" timestamp="1629286139878">
+    <state width="1161" height="239" key="GridCell.Tab.2.bottom" timestamp="1629365136747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629286139878" />
+    <state width="1161" height="239" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629365136747" />
     <state width="972" height="432" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644517" />
-    <state width="1077" height="148" key="GridCell.Tab.2.center" timestamp="1629286139878">
+    <state width="1161" height="239" key="GridCell.Tab.2.center" timestamp="1629365136747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1629286139878" />
+    <state width="1161" height="239" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1629365136747" />
     <state width="972" height="432" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644517" />
-    <state width="1077" height="148" key="GridCell.Tab.2.left" timestamp="1629286139877">
+    <state width="1161" height="239" key="GridCell.Tab.2.left" timestamp="1629365136747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="1161" height="239" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1629365136747" />
     <state width="972" height="432" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
-    <state width="1077" height="148" key="GridCell.Tab.2.right" timestamp="1629286139878">
+    <state width="1161" height="239" key="GridCell.Tab.2.right" timestamp="1629365136747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1077" height="148" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1629286139878" />
+    <state width="1161" height="239" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1629365136747" />
     <state width="972" height="432" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644517" />
     <state width="1163" height="666" key="GridCell.Tab.3.bottom" timestamp="1628515458577">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -489,15 +578,15 @@
     </state>
     <state x="744" y="120" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1627607681761" />
     <state x="930" y="150" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628684062461" />
-    <state x="311" y="81" width="961" height="707" key="SettingsEditor" timestamp="1629364717278">
+    <state x="311" y="81" width="961" height="707" key="SettingsEditor" timestamp="1629365352673">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="311" y="81" width="961" height="707" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1629364717278" />
+    <state x="311" y="81" width="961" height="707" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1629365352673" />
     <state x="249" y="93" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1628728909514" />
-    <state x="788" y="175" key="Vcs.Push.Dialog.v2" timestamp="1628684341811">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="417" y="130" key="Vcs.Push.Dialog.v2" timestamp="1629364926537">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="630" y="140" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1627799985932" />
+    <state x="417" y="130" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1629364926537" />
     <state x="788" y="175" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1628684341811" />
     <state x="948" y="159" key="chooseDestDirectoryDialog" timestamp="1627558985534">
       <screen x="0" y="0" width="1536" height="834" />
