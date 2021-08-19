@@ -14,4 +14,14 @@ public interface TransactionMapper {
 
     //map中的值通过#{key}取值
     Integer getCount(@Param("data") Map<String, String> data);
+
+
+    Transaction get(String id);
+
+    void update(Transaction transaction);
+
+    void save(Transaction transaction);
+
+    List getCharts();
+
 }

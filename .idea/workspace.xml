@@ -15,23 +15,232 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe508a3e-2c6f-456a-8a8c-0196dde6b819" name="Default Changelist" comment="123456~">
+    <list default="true" id="fe508a3e-2c6f-456a-8a8c-0196dde6b819" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/service/impl/ValueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/service/impl/ValueServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/ValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/ValueServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/CommonsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/CommonsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/mapper/TransactionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/mapper/TransactionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/mapper/TransactionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/mapper/TransactionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/service/TreansactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/service/TreansactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/service/impl/TreansactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/service/impl/TreansactionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/web/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/web/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/web/listener/LoadCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjpowernode/crm/web/listener/LoadCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stage2poss.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stage2poss.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/settings/org/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/settings/qx/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/settings/qx/permission/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/settings/qx/role/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/settings/qx/role/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/settings/qx/user/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/settings/qx/user/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/chart/activity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/chart/clue/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/chart/customerAndContacts/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/chart/transaction/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/clue/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/clue/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/save.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/save.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TransactionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TransactionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TransactionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/mapper/TransactionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/TreansactionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/TreansactionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/TreansactionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/service/impl/TreansactionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/controller/TransactionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/listener/LoadCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bjpowernode/crm/web/listener/LoadCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/ValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/ValueServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stage2poss.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stage2poss.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/exception/LoginException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/ActivityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/ActivityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/ClueActivityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/ClueActivityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/ClueMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/ClueMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/CustomerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/CustomerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/DeptMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/DeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/TransactionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/TransactionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/TypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/TypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/ValueMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/mapper/ValueMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Activity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Clue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/ClueActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Contacts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Remark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/SearchParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/pojo/Value.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/ActivityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/ClueService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/DeptService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/TreansactionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/TypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/ValueService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/ActivityServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/ClueServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/DeptServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/TreansactionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/TypeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/service/impl/ValueServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/utlis/DateTimeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/utlis/HandleFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/utlis/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/utlis/POJOUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/utlis/UUIDUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/Result$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/Result.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/advice/MyExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/CommonsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/CommonsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/ActivityController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/ActivityRemarkController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/ClueController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/CommonsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/DeptController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/TransactionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/TypeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/controller/ValueController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/interceptor/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/com/bjpowernode/crm/web/listener/LoadCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/classes/stage2poss.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/poi-3.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/inc/commons-head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/dept/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/dictionary/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/dictionary/type/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/dictionary/type/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/dictionary/type/save.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/dictionary/value/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/dictionary/value/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/dictionary/value/save.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/org/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/qx/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/qx/permission/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/qx/role/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/qx/role/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/qx/user/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/settings/qx/user/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/bootstrap-datetimepicker/locale/bootstrap-datetimepicker.zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/bs_pagination/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/bs_pagination/jquery.bs_pagination.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/bs_pagination/jquery.bs_pagination.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/bs_typeahead/bootstrap3-typeahead.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/image/IMG_7114.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/image/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/image/user-thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/bootstrap_3.3.0/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/bootstrap_3.3.0/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/bootstrap_3.3.0/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/bootstrap_3.3.0/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/jquery-1.11.1-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/jquery-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/1_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/1_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/diy/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/line_conn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/zTreeStandard.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/img/zTreeStandard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/css/zTreeStyle/zTreeStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/static/jquery/zTree_v3-master/js/jquery.ztree.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/test2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/test3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/activity/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/activity/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/chart/activity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/chart/clue/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/chart/customerAndContacts/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/chart/transaction/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/clue/convert.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/clue/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/clue/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/contacts/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/contacts/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/customer/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/customer/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/main/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/transaction/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/transaction/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/transaction/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/transaction/save.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/visit/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/visit/editTask.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/visit/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-1.0-SNAPSHOT/workbench/visit/saveTask.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tester.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +250,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\cmd\git.exe" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -89,15 +299,16 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.20804597" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\pncultivate\course\stage4_Spring+SpringMVC+MyBatis\crm\src\main\webapp\static" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bjpowernode.crm.mapper" />
+      <recent name="com.bjpowernode.crm.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\pncultivate\course\stage4_Spring+SpringMVC+MyBatis\crm\src\main\webapp\static" />
@@ -112,43 +323,15 @@
       <recent name="com.bjpowernode.crm.utlis" />
       <recent name="com.bjpowernode.crm.web.interceptor" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.bjpowernode.crm.mapper" />
-      <recent name="com.bjpowernode.crm.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\pncultivate\course\stage4_Spring+SpringMVC+MyBatis\crm\src\main\webapp\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.37">
-    <configuration name="Tester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crm" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tester" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tester.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crm" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tester" />
-      <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tester.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crm" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tester" />
-      <option name="METHOD_NAME" value="test02" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 9.0.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.37" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.371" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.371" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="crm:war exploded">
           <settings>
@@ -157,7 +340,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_crm_3" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_crm_6" />
         <option name="HTTP_PORT" value="80" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
@@ -166,7 +349,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="8920" />
+        <option name="DEBUG_PORT" value="14989" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -220,19 +403,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JUnit.Tester" />
-      <item itemvalue="JUnit.Tester.test01" />
-      <item itemvalue="JUnit.Tester.test02" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.37" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.Tester.test01" />
-        <item itemvalue="JUnit.Tester.test02" />
-        <item itemvalue="JUnit.Tester" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -270,6 +440,25 @@
       <workItem from="1628596560561" duration="5788000" />
       <workItem from="1628641434873" duration="5693000" />
       <workItem from="1628653767271" duration="15348000" />
+      <workItem from="1628728693301" duration="21983000" />
+      <workItem from="1628767884966" duration="679000" />
+      <workItem from="1628856340283" duration="834000" />
+      <workItem from="1628857268131" duration="703000" />
+      <workItem from="1628860628006" duration="393000" />
+      <workItem from="1628901632509" duration="3373000" />
+      <workItem from="1628908048839" duration="622000" />
+      <workItem from="1628939013594" duration="762000" />
+      <workItem from="1628943339198" duration="210000" />
+      <workItem from="1628943587551" duration="1108000" />
+      <workItem from="1629010031418" duration="77000" />
+      <workItem from="1629029317819" duration="621000" />
+      <workItem from="1629074567696" duration="3364000" />
+      <workItem from="1629105962391" duration="822000" />
+      <workItem from="1629107681531" duration="1386000" />
+      <workItem from="1629251860761" duration="677000" />
+      <workItem from="1629285526279" duration="603000" />
+      <workItem from="1629335916636" duration="997000" />
+      <workItem from="1629339091598" duration="813000" />
     </task>
     <task id="LOCAL-00001" summary="123456~">
       <created>1627607409205</created>
@@ -325,6 +514,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="123456~" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="663" y="299" key="#Custom_Plugin_Repositories" timestamp="1628908686242">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="663" y="299" key="#Custom_Plugin_Repositories/0.0.1536.834@0.0.1536.834" timestamp="1628908686242" />
+    <state x="636" y="130" key="#HTTP_Proxy" timestamp="1628939245291">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="636" y="130" key="#HTTP_Proxy/0.0.1536.834@0.0.1536.834" timestamp="1628939245291" />
     <state x="678" y="64" key="#Inspections" timestamp="1628256303938">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -342,25 +539,25 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="292" y="251" key="#Template_Data_Languages/0.0.1536.834@0.0.1536.834" timestamp="1628065865739" />
-    <state x="344" y="89" width="1146" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628679772451">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="234" y="11" width="1146" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629286093012">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="134" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1628300391610" />
-    <state x="344" y="89" width="1146" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628679772451" />
-    <state x="965" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1628666945410">
+    <state x="234" y="11" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1629286093012" />
+    <state x="344" y="89" width="1146" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628767272851" />
+    <state x="965" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1628764213556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="772" y="109" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1628250277373" />
-    <state x="965" y="136" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1628666945410" />
-    <state x="1103" y="196" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1628667030531">
+    <state x="965" y="136" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1628764213556" />
+    <state x="1103" y="196" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1628748661790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="882" y="157" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1628250392425" />
-    <state x="1103" y="196" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628667030531" />
-    <state x="893" y="57" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1628665571544">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1103" y="196" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628748661790" />
+    <state x="714" y="46" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1629285686884">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="714" y="46" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.834@0.0.1536.834" timestamp="1627557884613" />
+    <state x="714" y="46" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.834@0.0.1536.834" timestamp="1629285686884" />
     <state x="893" y="57" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1040@0.0.1920.1040" timestamp="1628665571544" />
     <state x="595" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1628165994996">
       <screen x="0" y="0" width="1536" height="834" />
@@ -378,76 +575,80 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="840" y="226" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1627991418645" />
-    <state x="965" y="203" key="FileChooserDialogImpl" timestamp="1628656457993">
+    <state x="368" y="8" key="DiffContextDialog" timestamp="1628684322477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="772" y="163" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1628240518748" />
+    <state x="368" y="8" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628684322477" />
+    <state x="547" y="163" key="FileChooserDialogImpl" timestamp="1629117843127">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="547" y="163" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1629117843127" />
     <state x="965" y="203" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628656457993" />
-    <state x="1045" y="364" key="Github.CreateGistDialog" timestamp="1628668355068">
+    <state x="1045" y="364" key="Github.CreateGistDialog" timestamp="1628765394446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="836" y="292" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1628300396210" />
-    <state x="1045" y="364" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628668355068" />
-    <state width="762" height="281" key="GridCell.Tab.0.bottom" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1045" y="364" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628765394446" />
+    <state width="1077" height="148" key="GridCell.Tab.0.bottom" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.0.center" timestamp="1628682463456">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.0.center" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463456" />
-    <state width="762" height="281" key="GridCell.Tab.0.left" timestamp="1628682463456">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.0.left" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463456" />
-    <state width="762" height="281" key="GridCell.Tab.0.right" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.0.right" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.1.bottom" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.1.bottom" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1628317365330" />
-    <state width="762" height="281" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.1.center" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.1.center" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.1.left" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.1.left" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.1.right" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.1.right" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.2.bottom" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.2.bottom" timestamp="1629286139878">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.2.center" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1629286139878" />
+    <state width="972" height="432" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644517" />
+    <state width="1077" height="148" key="GridCell.Tab.2.center" timestamp="1629286139878">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.2.left" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1629286139878" />
+    <state width="972" height="432" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644517" />
+    <state width="1077" height="148" key="GridCell.Tab.2.left" timestamp="1629286139877">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
-    <state width="762" height="281" key="GridCell.Tab.2.right" timestamp="1628682463457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="148" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1629286139877" />
+    <state width="972" height="432" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644516" />
+    <state width="1077" height="148" key="GridCell.Tab.2.right" timestamp="1629286139878">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="969" height="186" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1628317365329" />
-    <state width="762" height="281" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628682463457" />
+    <state width="1077" height="148" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1629286139878" />
+    <state width="972" height="432" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628767644517" />
     <state width="1163" height="666" key="GridCell.Tab.3.bottom" timestamp="1628515458577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -508,19 +709,21 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="501" y="66" key="Maven.ArtifactSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1627731872474" />
-    <state x="744" y="120" key="RollbackChangesDialog" timestamp="1627607681761">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="744" y="120" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1627607681761" />
-    <state x="249" y="93" width="961" height="707" key="SettingsEditor" timestamp="1628683484065">
+    <state x="930" y="150" key="RollbackChangesDialog" timestamp="1628684062461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="424" y="35" width="961" height="707" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1628318528514" />
-    <state x="249" y="93" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1628683484065" />
-    <state x="630" y="140" key="Vcs.Push.Dialog.v2" timestamp="1627799985932">
+    <state x="744" y="120" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1627607681761" />
+    <state x="930" y="150" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628684062461" />
+    <state x="427" y="52" width="961" height="707" key="SettingsEditor" timestamp="1629336009721">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="427" y="52" width="961" height="707" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1629336009721" />
+    <state x="249" y="93" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1628728909514" />
+    <state x="788" y="175" key="Vcs.Push.Dialog.v2" timestamp="1628684341811">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state x="630" y="140" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1627799985932" />
+    <state x="788" y="175" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1628684341811" />
     <state x="948" y="159" key="chooseDestDirectoryDialog" timestamp="1627558985534">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -541,6 +744,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="614" y="161" width="876" height="610" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1627994885119" />
+    <state x="152" y="71" key="new project wizard" timestamp="1629117846916">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="152" y="71" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1629117846916" />
     <state x="1093" y="176" key="refactoring.ChangeSignatureDialog" timestamp="1628510367478">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -550,10 +757,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="672" y="186" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1627819637599" />
-    <state x="398" y="193" width="840" height="846" key="search.everywhere.popup" timestamp="1628680991386">
+    <state x="398" y="193" width="840" height="846" key="search.everywhere.popup" timestamp="1628729292197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="318" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1628045796071" />
-    <state x="398" y="193" width="840" height="846" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1628680991386" />
+    <state x="398" y="193" width="840" height="846" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1628729292197" />
   </component>
 </project>

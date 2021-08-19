@@ -37,6 +37,35 @@
         </where>
     </sql>
 
+    <insert id="save">
+    insert into  tbl_transaction values(
+      #{id},
+      #{owner},
+      #{amountOfMoney},
+      #{name},
+      #{expectedClosingDate},
+      #{customerId},
+      #{stage},
+      #{type},
+      #{source},
+      #{activityId},
+      #{contactsId},
+      #{description},
+      #{createBy},
+      #{createTime},
+      #{editBy},
+      #{editTime},
+      #{contactSummary},
+      #{nextContactTime}
+    )
+    </insert>
+
+
+    <update id="update">
+        update tbl_transaction set stage=#{stage},editBy=#{editBy},editTime=#{editTime}
+        where id=#{id}
+    </update>
+
 
     <select id="getCount" resultType="int">
         select count(*)
@@ -187,5 +216,15 @@
 
         <include refid="searchSQL" />
       </select>
+
+
+    <select id="get" resultType="Transaction">
+         select * from tbl_transaction where
+         id=#{id}
+    </select>
+
+    <select id="getCharts" resultType="List">
+        select count(*) value,stage `name` from tbl_transaction GROUP BY stage
+    </select>
 
 </mapper>

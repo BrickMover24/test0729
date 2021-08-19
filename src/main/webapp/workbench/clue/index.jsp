@@ -4,6 +4,7 @@
 <html>
 <head>
 	<%@ include file="/inc/commons-head.jsp"%>
+
 	<script type="text/javascript">
 		jQuery(function ($) {
 			function pageList(currentPage, rowsPerPage) {

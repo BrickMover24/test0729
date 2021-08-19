@@ -1,10 +1,17 @@
 package com.bjpowernode.crm.service.impl;
 
+import com.bjpowernode.crm.mapper.TransactionHistoryMapper;
 import com.bjpowernode.crm.mapper.TransactionMapper;
 import com.bjpowernode.crm.pojo.Page;
+import com.bjpowernode.crm.pojo.Transaction;
+import com.bjpowernode.crm.pojo.TransactionHistory;
 import com.bjpowernode.crm.service.TreansactionService;
+import com.bjpowernode.crm.utlis.DateTimeUtil;
+import com.bjpowernode.crm.utlis.UUIDUtil;
+import org.omg.CosNaming.IstringHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.unit.DataUnit;
 
 import java.util.List;
 
@@ -13,6 +20,8 @@ public class TreansactionServiceImpl implements TreansactionService {
 
     @Autowired
     private TransactionMapper mapper;
+    @Autowired
+    private TransactionHistoryMapper transactionHistoryMapper;
 
     public void getPage(Page page) {
         // 总记录数
@@ -27,5 +36,30 @@ public class TreansactionServiceImpl implements TreansactionService {
         page.setData(data);
         page.setTotalRows(totalRows);
         page.setTotalPages(totalPages);
+    }
+
+    public void changeStage(String id, String stage,String editBy) {
+
+        String editTimme = DateTimeUtil.getSysTimeStr();
+        //修改交易状态
+       Transaction transaction= mapper.get(id);
+       transaction.setStage(stage);
+       transaction.setEditBy(editBy);
+       transaction.setEditTime(editTimme);
+        mapper.update(transaction);
+        //修改交易历史
+        TransactionHistory history = new TransactionHistory();
+
+        history.setId(UUIDUtil.getUUID());
+        history.setAmountOfMoney(transaction.getAmountOfMoney());
+        history.setEditBy(editBy);
+        history.setEditTime(editTimme);
+        history.setExpectedClosingDate(transaction.getExpectedClosingDate());
+        history.setTransactionId(id);
+        transactionHistoryMapper.add(history);
+    }
+
+    public List getCharts() {
+        return mapper.getCharts();
     }
 }

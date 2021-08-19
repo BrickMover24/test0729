@@ -19,12 +19,12 @@ public class LoadCache  implements ServletContextListener {
     @SneakyThrows
     public void contextInitialized(ServletContextEvent sce){
 
-        System.out.println("开始读取数据字典缓存数据");
+        //System.out.println("开始读取数据字典缓存数据");
         //读取数组字典中的数据,保存到servletcontext中作为服务器缓存
         WebApplicationContext beanFactory = ContextLoader.getCurrentWebApplicationContext();
         ValueService valueService = beanFactory.getBean(ValueService.class);
         List<Value> list = valueService.getAll();
-        sce.getServletContext().setAttribute("dicList",list);
+        //sce.getServletContext().setAttribute("dicList",list);
 
         HashMap<String, List> map = new HashMap<>();
           for (Value v:list){
@@ -38,7 +38,7 @@ public class LoadCache  implements ServletContextListener {
           }
           System.out.println(map);
           sce.getServletContext().setAttribute("dicMap",map);
-        System.out.println("数据字典缓存加载完毕!");
+        //System.out.println("数据字典缓存加载完毕!");
 
         //阶段和可能性的关系
         HashMap stage2poss = new HashMap();
@@ -56,8 +56,8 @@ public class LoadCache  implements ServletContextListener {
         sce.getServletContext().setAttribute("stage2PossObj",json);
 
 
-       String stages = mapper.writeValueAsString(map.get("stage"));
-        sce.getServletContext().setAttribute("stages",stages);
+       String s = mapper.writeValueAsString(map.get("stage"));
+        sce.getServletContext().setAttribute("stages",s);
 
     }
 }

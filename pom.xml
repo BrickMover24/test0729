@@ -132,6 +132,19 @@
       <version>1.7.0</version>
     </dependency>
 
+ <!--   <dependency>
+      <groupId>net.kemitix</groupId>
+      <artifactId>spring-boot-daemon-sample</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.spring-boot-ext</groupId>
+      <artifactId>spring-boot-starter-ext</artifactId>
+      <version>2.1.4</version>
+    </dependency>-->
+<!--    lombok插件-->
+
   </dependencies>
 
   <build>
@@ -147,6 +160,5 @@
       </resource>
     </resources>
   </build>
-
 
 </project>

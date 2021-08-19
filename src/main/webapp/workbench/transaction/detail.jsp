@@ -1,11 +1,8 @@
-<%@page contentType="text/html; charset=UTF-8"%>
+<%@page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-
-<link href="/static/jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-
+    <%@ include file="/inc/commons-head.jsp"%>
 <style type="text/css">
 .mystage{
 	font-size: 20px;
@@ -18,12 +15,7 @@
 	vertical-align: middle;
 }
 </style>
-
-<script type="text/javascript" src="/static/jquery/jquery-1.11.1-min.js"></script>
-<script type="text/javascript" src="/static/jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
-
 <script type="text/javascript">
-
 	//默认情况下取消和保存按钮是隐藏的
 	var cancelAndSaveBtnDefault = true;
 	
@@ -61,53 +53,91 @@
 		$(".myHref").mouseout(function(){
 			$(this).children("span").css("color","#E6E6E6");
 		});
-		
-		
-		//阶段提示框
-		$(".mystage").popover({
-            trigger:'manual',
-            placement : 'bottom',
-            html: 'true',
-            animation: false
-        }).on("mouseenter", function () {
-                    var _this = this;
-                    $(this).popover("show");
-                    $(this).siblings(".popover").on("mouseleave", function () {
-                        $(_this).popover('hide');
-                    });
-                }).on("mouseleave", function () {
-                    var _this = this;
-                    setTimeout(function () {
-                        if (!$(".popover:hover").length) {
-                            $(_this).popover("hide")
-                        }
-                    }, 100);
-                });
-/*
-	绿圈:表示已完成的阶段class="glyphicon glyphicon-ok-circle mystage green"
-	小水滴:表示进行中的阶段class="glyphicon glyphicon-map-marker mystage green"
-	黑圈:表示未完成的阶段class="glyphicon glyphicon-record mystage"
-	黑X:;表示交易失败class="glyphicon glyphicon-remove mystage"
-	红X:表示已该形式交易失败class="glyphicon glyphicon-remove mystage"*/
 
-		/* <span class="glyphicon glyphicon-ok-crecle mystage" data-toggle="popover"
-				data=placement="button" data-content="资质审查">
-				</span>*/
+        /*
+            绿圈:表示已完成的阶段class="glyphicon glyphicon-ok-circle mystage green"
+            小水滴:表示进行中的阶段class="glyphicon glyphicon-map-marker mystage green"
+            黑圈:表示未完成的阶段class="glyphicon glyphicon-record mystage"
+            黑X:;表示交易失败class="glyphicon glyphicon-remove mystage"
+            红X:表示已该形式交易失败class="glyphicon glyphicon-remove mystage"*/
 
+        var currStage = "04确定决策者";
+        var stage2PossObj=${stage2PossObj};
 
+        function initTcon(){
+            var s = ${stages};
+            var arr=[];
+            var icon="";
 
-	 var stages=${stages};
-	var arr=[];
-	var icon="";
-	$(stages).each(function () {
-       arr.push(`
-                <span class="glyphicon mystage`+icon+`" data-toggle="popover"
-                data=placement="button" data-content="资质审查">
-                  </span>`)
-	});
+            $(s).each(function () {
+                //通过遍历中阶段图标对应的可能性大于0 (非失败)
+                if (stage2PossObj[this.value]>0){
+                    if (+stage2PossObj[this.value] < stage2PossObj[currStage]){
+                        icon="glyphicon-ok-circle green";
+                    }else if (+stage2PossObj[this.value] == stage2PossObj[currStage]){
+                        icon="glyphicon-map-marker green";
+                    }else{
+                        icon="glyphicon-record";
+                    }
+                }
+                /*
+                可能性为零
+                遍历中的阶段是当前阶段
+                遍历中的阶段不是当前阶段
+                */
+                else{
+                    if (currStage == this.value){
+                        icon="glyphicon-remove red";
+                    }else{
+                        icon="glyphicon-remove";
+                    }
+                }
 
+                /*arr.push(` <span class="glyphicon mystage${icon}" data-toggle="popover"
+                          data-placement="bottom" data-content="${this.value}">
+                            </span>-------`)*/
+            });
 
-	});
+            $("#icons").html(arr.join(""));
+
+            $(".mystage").popover({
+                trigger:'manual',
+                placement : 'bottom',
+                html: 'true',
+                animation: false
+            });
+        }
+
+        initTcon(currStage);
+
+        //阶段提示框,使用事件委派机制
+        $("#icons").on("mouseenter",".mystage",function () {
+            var _this = this;
+            $(this).popover("show");
+            $(this).siblings(".popover").on("mouseleave", function () {
+                $(_this).popover('hide');
+            });
+        }).on("mouseleave",".mystage",function () {
+            var _this = this;
+            setTimeout(function () {
+                if (!$(".popover:hover").length) {
+                    $(_this).popover("hide")
+                }
+            }, 100);
+        }).on("click",".mystage",function () {
+           var stage = $(this).data("content1");
+           $.ajax({
+               url:"/tran/changeStage.do?=${param}&stage="+stage,
+               success(data){
+                   if (data.success){
+                       currStage=stage;
+                       initTcon();
+                   }
+               }
+           })
+        });
+
+    });
 
 </script>
 

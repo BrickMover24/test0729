@@ -1,7 +1,10 @@
+/*
 import com.bjpowernode.crm.mapper.ActivityMapper;
 import com.bjpowernode.crm.mapper.DeptMapper;
+import com.bjpowernode.crm.mapper.TransactionMapper;
 import com.bjpowernode.crm.pojo.Activity;
 import com.bjpowernode.crm.pojo.Dept;
+import com.bjpowernode.crm.pojo.Transaction;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.junit.Test;
@@ -9,6 +12,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import java.util.Random;
 
 @ContextConfiguration("classpath:applicationContext.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -40,4 +45,33 @@ public class Tester {
             activityMapper.save(activity);
         }
     }
+
+
+    @Autowired
+    private TransactionMapper mapper;
+
+    @Test
+    public void test04(){
+
+        String[] stages = {
+                "07成交",
+                "01资质审查",
+                "08丢失的线索",
+                "09因竞争丢失关闭",
+                "02需求分析",
+                "05提案/报价",
+                "03价值建议",
+                "04确定决策者",
+                "06谈判/复审"
+        };
+        Random random = new Random();
+
+        for (int i = 0; i < 88; i++) {
+            int index = random.nextInt(stages.length);
+            Transaction transaction = new Transaction();
+            transaction.setStage( stages[index] );
+            mapper.save(transaction);
+        }
+    }
 }
+*/
